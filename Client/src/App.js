@@ -2,7 +2,6 @@ import FrontPage from './components/frontPageComponents/frontPage';
 import './App.css';
 
 function App() {
-    render() 
         return (     
           <div className="App">
           <FrontPage />
