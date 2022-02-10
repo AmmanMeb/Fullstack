@@ -1,4 +1,6 @@
 import './frontPage.scss';
+import React, { useState } from 'react';
+import { Navigate } from "react-router-dom"
 
 function FrontPage() {
     const [doRedirect, setDoRedirect] = useState(false);
@@ -7,7 +9,7 @@ function FrontPage() {
         event.preventDefault()
         return setDoRedirect(true);
     }
-    if (doRedirect) return 
+    if (doRedirect) return <Navigate to="/SubmitPage"/>;
         return (
             <section>
                 <div>
