@@ -10,18 +10,19 @@ import './App.css';
 
 class App extends Component {
   render(){
-    return (  
-      <div className="App">
+    return (       
       <BrowserRouter> 
-        <Routes>
-            
-              <Route exact path = '/' component={FrontPage}/>
-              <Route path="/SignIn" component={SubmitPage}/>
+        <Routes>       
+          <Route path="/" element={<div className="App">
+            <Route exact path = '/' component={FrontPage}/>
+            <Route path="/SignIn" component={SubmitPage}/>
     
-            
+          </div>}>
+            </Route>
         </Routes> 
+ 
       </BrowserRouter> 
-      </div>
+     
         )
   }
         
