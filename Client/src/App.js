@@ -1,7 +1,6 @@
 import FrontPage from './components/frontPageComponents/frontPage';
 import SubmitPage from './components/submitPageComponents/submitPage';
 import {
-  BrowserRouter,
   Routes,
   Route
 } from "react-router-dom"; 
