@@ -11,18 +11,17 @@ import './App.css';
 class App extends Component {
   render(){
     return (       
+      <div className="app">
       <BrowserRouter> 
         <Routes>       
-          <Route path="/" element={<div className="App">
+        
             <Route exact path = '/' component={FrontPage}/>
-            <Route path="/SignIn" component={SubmitPage}/>
-    
-          </div>}>
-            </Route>
+            <Route path="/SignIn" component={SubmitPage}/>    
+          
         </Routes> 
  
       </BrowserRouter> 
-     
+     </div>
         )
   }
         
