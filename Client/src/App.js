@@ -7,21 +7,21 @@ import {
 import React, { Component } from 'react';
 import './App.css';
 
-class App extends Component {
-  render(){
+const App = () =>{
+ 
     return (       
       <div className="app">
         <Routes>       
           
-            <Route exact path = '/' component={FrontPage}/>
-            <Route path="/SignIn" component={SubmitPage}/>    
+            <Route exact path = '/' element={FrontPage}/>
+            <Route path="/SignIn" element={SubmitPage}/>    
           
         </Routes> 
  
       
      </div>
         )
-  }
+  
         
     
     
