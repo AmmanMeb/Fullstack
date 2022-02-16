@@ -4,7 +4,6 @@ import {
   Routes,
   Route
 } from "react-router-dom"; 
-import React, { Component } from 'react';
 import './App.css';
 
 const App = () =>{
@@ -13,8 +12,8 @@ const App = () =>{
       <div className="app">
         <Routes>       
           
-            <Route exact path = '/' element={FrontPage}/>
-            <Route path="/SignIn" element={SubmitPage}/>    
+            <Route exact path = '/' element={<FrontPage/> }/>
+            <Route path="/SignIn" element={<SubmitPage/> }/>    
           
         </Routes> 
  
