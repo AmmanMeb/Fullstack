@@ -1,6 +1,11 @@
+import './submitPage.scss';
+
 function SubmitPage() {
 return(
-    <div>submit page</div>
+    <div>Paste Link Below
+       <input></input> 
+    </div>
+    
 )
 }
 export default SubmitPage
