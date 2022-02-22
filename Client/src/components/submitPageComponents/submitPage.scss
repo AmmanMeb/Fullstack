@@ -1,7 +1,15 @@
 $black: rgb(10, 10, 10);
+$fifty: 50%;
 
 .title {
     color: $black;
     font-weight: 900;
 }
 
+.centered {
+    position: absolute;
+    top: $fifty;
+    left: $fifty;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
