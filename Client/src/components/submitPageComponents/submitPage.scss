@@ -1,5 +1,7 @@
 $black: rgb(10, 10, 10);
 $fifty: 50%;
+$negativefifty: -50%;
+$backgroundcolor: rgb(197, 194, 194);
 
 .title {
     color: $black;
@@ -10,6 +12,7 @@ $fifty: 50%;
     position: absolute;
     top: $fifty;
     left: $fifty;
-    transform: translate(-50%, -50%);
+    transform: translate($negativefifty, $negativefifty);
     text-align: center;
+    background-color: $backgroundcolor;
 }
