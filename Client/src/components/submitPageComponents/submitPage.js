@@ -2,6 +2,7 @@ import './submitPage.scss';
 
 function SubmitPage() {
 return(
+  <section>
     <div class="centered">
     <div className = "title">Submit a link</div>
     <div  class="field">
@@ -21,7 +22,7 @@ return(
      
     </div>
     </div>
-    
+ </section>   
 )
 }
 export default SubmitPage
