@@ -2,27 +2,27 @@ import './submitPage.scss';
 
 function SubmitPage() {
 return(
-  <section>
-    <div class="centered">
-    <div className = "title">Submit a link</div>
-    <div  class="field">
-      <label for="title-2">Link</label> 
+  <section class="index-banner">
+  <div className= "bg"></div>
+  <div className= "float">
+    <div className= "type">
+      <div className="title-2">Submit a link</div>
+    <div>
+      <label>Link </label> 
       <input ></input> 
     </div>
-    <div class="field">   
-      <label for="title-3">Title</label>
+    <div>   
+      <label>Title </label>
       <input></input>
-    </div>  
-
-    <div id = "error" className = "error"></div>
+    </div>
+    <div id="error" className = "error-2"> </div>
     <div>
-        <button type="button" class="button-2" >
-          Submit
-        </button>
-     
+
+        <button >Submit</button>
     </div>
-    </div>
- </section>   
+      </div>
+  </div>
+</section>         
 )
 }
 export default SubmitPage
