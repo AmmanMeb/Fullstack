@@ -6,11 +6,11 @@ return(
     <div class="centered">
     <div className = "title">Submit a link</div>
     <div  class="field">
-      <label for="fullname">Link</label> 
+      <label for="title-2">Link</label> 
       <input ></input> 
     </div>
     <div class="field">   
-      <label for="fullname">Title</label>
+      <label for="title-3">Title</label>
       <input></input>
     </div>  
 

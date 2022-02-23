@@ -7,6 +7,7 @@ $secondarybackgroundcolor: rgb(197, 194, 194);
 .title {
     color: $black;
     font-weight: 900;
+    font-size: 25px;
 }
 
 .centered {
@@ -20,4 +21,8 @@ $secondarybackgroundcolor: rgb(197, 194, 194);
 
 section {
  background-color: $backgroundcolor;
+}
+
+.title-2 {
+    
 }
