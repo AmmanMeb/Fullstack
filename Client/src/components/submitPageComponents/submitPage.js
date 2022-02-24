@@ -6,7 +6,7 @@ return(
   <div className= "bg"></div>
   <div className= "float">
     <div className= "type">
-      <div className="title-2">Submit a link</div>
+      <div className="title">Submit a link</div>
     <div>
       <label>Link </label> 
       <input ></input> 
