@@ -3,11 +3,13 @@ $fifty: 50%;
 $negativefifty: -50%;
 $backgroundcolor: rgb(236, 236, 236);
 $secondarybackgroundcolor: rgb(197, 194, 194);
+$defaultfontsize: 25px;
+$defaultfontweight: bold;
 
 .title {
     color: $black;
-    font-weight: bold;
-    font-size: 25px;
+    font-weight: $defaultfontweight;
+    font-size: $defaultfontsize;
 }
 
 .centered {
@@ -46,5 +48,10 @@ input {
     color: white;
     margin-left: 15vh;
     margin-top: 2vh;
+  }
+
+  label {
+    font-size: $defaultfontsize;
+    font-weight: $defaultfontweight;
   }
   
