@@ -43,7 +43,13 @@ input {
 
   label {
     font-size: $defaultfontsize;
-    font-weight: $defaultfontweight;
+    font-weight: $defaultfontweight;    
+  }
+  input, label {
+    display: block;
+  }
+  .label-1 {
+    padding-bottom: 20%;
   }
   
   .type {
