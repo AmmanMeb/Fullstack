@@ -7,15 +7,15 @@ return(
   <div className= "float">
     <div className= "type">
       <div className="title">Submit a link</div>
-    <div>
+    <div className="label-1">
       <label>Link </label> 
       <input ></input> 
     </div>
-    <div>   
+    <div className="label-2">   
       <label>Title </label>
       <input></input>
     </div>
-    <div id="error" className = "error-2"> </div>
+    <div id="error" className = "error"> </div>
     <div>
 
         <button >Submit</button>
