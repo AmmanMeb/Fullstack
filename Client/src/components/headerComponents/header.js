@@ -1,4 +1,4 @@
-import './submitPage.scss';
+import './header.scss';
 
 function Header() {
 return(
