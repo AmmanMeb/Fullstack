@@ -12,7 +12,7 @@ const App = () =>{
     return (       
       <div className="app">
         <Routes>
-            <Route path = '/' element={<Header/>}/>        
+            <Header/>        
             <Route exact path = '/' element={<FrontPage/> }/>
             <Route path="/SubmitPage" element={<SubmitPage/> }/>    
           
