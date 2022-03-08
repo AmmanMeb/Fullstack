@@ -1,5 +1,10 @@
 import './submitPage.scss';
 
+const [link, setLink] = useState ('')
+ const [title, setTitle] = useState ('')
+ const [doRedirect, setDoRedirect] = useState(false);
+
+
 function SubmitPage() {
 return(
   <section class="index-banner">
@@ -9,11 +14,11 @@ return(
       <div className="title">Submit a link</div>
     <div className="label-1">
       <label>Link </label> 
-      <input ></input> 
+      <input  type="text" name="link" onChange = {e => {setLink(e.target.value)}}></input> 
     </div>
     <div className="label-2">   
       <label>Title </label>
-      <input></input>
+      <input  type="text" name="title" onChange = {e => {setTitle(e.target.value)}}></input>
     </div>
     <div id="error" className = "error"> </div>
     <div>
