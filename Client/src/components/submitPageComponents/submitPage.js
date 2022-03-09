@@ -4,6 +4,25 @@ const [link, setLink] = useState ('')
  const [title, setTitle] = useState ('')
  const [doRedirect, setDoRedirect] = useState(false);
 
+ const onSubmit = (event) => {
+  event.preventDefault()
+  
+  if (link.length < 1) {
+     return document.getElementById('error').innerHTML = ("Please enter a Link");
+    }
+    if (title.length < 1) {
+      return  document.getElementById('error').innerHTML = ("Please enter a Title");
+    }
+     apiClient.signUp(link, title) .then((response) => {
+       console.log(response)
+       if (response === 'Account Created') {
+         return setDoRedirect(true);
+        }
+     })
+       .catch(error => {
+        console.log('Error found when creating meeting');
+    })
+ }
 
 function SubmitPage() {
 return(
