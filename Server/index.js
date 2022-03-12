@@ -22,6 +22,9 @@ var con = mysql.createConnection({
   database: "forum"
 })
 
+app.post('/link', function (req, res){
+  const queryString = "INSERT INTO accounts (Username, Password) VALUES (?, ?)"  
+}
 
 
 app.listen(PORT, () => {
