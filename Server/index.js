@@ -18,13 +18,20 @@ var con = mysql.createConnection({
   host: "0.0.0.0",
   user: "root",
   password: "Steven1spielberg",
-  port: "3306",
-  database: "forum"
+  port: "127.0.0.1:3306",
+  database: "fullstack"
 })
 
 app.post('/link', function (req, res){
-  const queryString = "INSERT INTO accounts (Username, Password) VALUES (?, ?)"  
-}
+  const queryString = "INSERT INTO links (links) VALUES (?)"  
+  con.query(queryString, [req.body.links], function (err, result){
+    if (err) {
+      throw err
+    }
+     res.send ('Account Created')
+    })
+})
+
 
 
 app.listen(PORT, () => {
