@@ -22,9 +22,10 @@ const [link, setLink] = useState ('')
        .catch(error => {
         console.log('Error found when creating meeting');
     })
+     if (doRedirect) return <Navigate to="/FrontPage"/>;
  }
 
- if (doRedirect) return <Navigate to="/FrontPage"/>;
+
 
 function SubmitPage() {
 return(
