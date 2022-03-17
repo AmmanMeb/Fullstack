@@ -28,7 +28,7 @@ app.post('/link', function (req, res){
     if (err) {
       throw err
     }
-     res.send ('Account Created')
+     res.send ('Link Created')
     })
 })
 
