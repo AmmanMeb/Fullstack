@@ -15,7 +15,7 @@ const [link, setLink] = useState ('')
     }
      apiClient.signUp(link, title) .then((response) => {
        console.log(response)
-       if (response === 'Account Created') {
+       if (response === 'Link Created') {
          return setDoRedirect(true);
         }
      })
