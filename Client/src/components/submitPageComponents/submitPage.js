@@ -24,6 +24,8 @@ const [link, setLink] = useState ('')
     })
  }
 
+ if (doRedirect) return <Navigate to="/FrontPage"/>;
+
 function SubmitPage() {
 return(
   <section class="index-banner">
