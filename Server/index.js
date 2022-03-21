@@ -23,7 +23,7 @@ var con = mysql.createConnection({
 })
 
 app.post('/link', function (req, res){
-  const queryString = "INSERT INTO links (links) VALUES (?)"  
+  const queryString = "INSERT INTO links (links, title) VALUES (?, ?)"  
   con.query(queryString, [req.body.links], function (err, result){
     if (err) {
       throw err
