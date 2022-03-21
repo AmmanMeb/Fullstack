@@ -3,11 +3,11 @@ import axios from 'axios'
 
 //communicates with the Backend
 export default class apiClient {
-    static async signUp(user, pass) {
+    static async signUp(links, title) {
         const response =  await  axios
         .post('8080', {
-          username: user,
-          password: pass
+          links: links,
+          title: title
         })
         return  response.data;
     }
