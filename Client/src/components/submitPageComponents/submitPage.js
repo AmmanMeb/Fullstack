@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import './submitPage.scss';
 import apiClient from '../../api/apiclient'
 
-const [link, setLink] = useState ('')
+
+
+
+function SubmitPage() {
+  const [link, setLink] = useState ('')
  const [title, setTitle] = useState ('')
  const [doRedirect, setDoRedirect] = useState(false);
 
@@ -27,9 +31,6 @@ const [link, setLink] = useState ('')
      if (doRedirect) return <Navigate to="/FrontPage"/>;
  }
 
-
-
-function SubmitPage() {
 return(
   <section class="index-banner">
   <div className= "bg"></div>
@@ -47,7 +48,7 @@ return(
     <div id="error" className = "error"> </div>
     <div>
 
-        <button >Submit</button>
+        <button class="button-3" onClick={onSubmit}>Submit</button>
     </div>
       </div>
   </div>
