@@ -1,4 +1,6 @@
+import React, { useState } from 'react';
 import './submitPage.scss';
+import apiClient from '../../api/apiclient'
 
 const [link, setLink] = useState ('')
  const [title, setTitle] = useState ('')
