@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.1",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "react-scripts": "^5.0.0"
   }
 }
