@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "node index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -14,6 +14,7 @@
   "dependencies": {
     "body-parser": "^1.19.1",
     "express": "^4.17.3",
+    "mysql": "^2.18.1",
     "react-scripts": "^5.0.0"
   }
 }
