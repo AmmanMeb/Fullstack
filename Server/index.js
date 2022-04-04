@@ -46,4 +46,3 @@ app.post('/title', function (req, res){
 app.listen(PORT, () => {
   console.log(`Example app listening at port ${PORT}`)
 })
-App
