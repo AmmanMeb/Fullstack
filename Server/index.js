@@ -22,11 +22,8 @@ var con = mysql.createConnection({
   database: "fullstack"
 })
 
-app.get('/', function (req, res) {
-  res.render('index', {});
-});
 
-app.post('/link', function (req, res){
+app.post('/', function (req, res){
   const queryString = "INSERT INTO links (links, title) VALUES (?, ?)"  
   con.query(queryString, [req.body.links], function (err, result){
     if (err) {
